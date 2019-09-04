@@ -1,4 +1,4 @@
-// 向管道输出从2开始的自然数序列
+// Output a sequence of natural numbers starting at 2 to the pipeline
 counter := prog(c:chan of int) {
 	i := 2;
 	for(;;) {
@@ -6,8 +6,9 @@ counter := prog(c:chan of int) {
 	}
 };
 
-// 针对listen管道获取的数列，过滤掉是prime倍数的数
-// 新的序列输出到send管道
+// For the sequence obtained by the listen pipeline
+// filter out the number that is a multiple of prime
+// New sequence output to the send pipeline
 filter := prog(prime:int, listen, send:chan of int) {
 	i:int;
 	for(;;) {
@@ -17,9 +18,9 @@ filter := prog(prime:int, listen, send:chan of int) {
 	}
 };
 
-// 主函数
-// 每个管道第一个流出的数必然是素数
-// 然后基于这个新的素数构建新的素数过滤器
+// Main function
+// The number of the first outflow of each pipe must be prime
+// Then build a new prime filter based on this new prime number
 sieve := prog() of chan of int {
 	c := mk(chan of int);
 	begin counter(c);
@@ -37,5 +38,5 @@ sieve := prog() of chan of int {
 	become prime;
 };
 
-// 启动素数筛
+// Start prime screen
 prime := sieve();
