@@ -25,3 +25,5 @@ Tuy nhiên ta cũng không nên lạm dụng CGO vì vấn đề hiệu suất, 
 	</span>
 </div>
 <br/>
+
+[Tiếp theo](ch2-01-quick-start.md)
