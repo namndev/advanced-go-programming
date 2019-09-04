@@ -1,4 +1,4 @@
-# Chương 5: Go và Web
+# Chapter 4: Go và Web
 
 <div align="center">
 	<img src="../images/ch5.png">
