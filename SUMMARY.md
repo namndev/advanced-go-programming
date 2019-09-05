@@ -32,6 +32,7 @@
   * [3.8 grpcurl tool](ch3-rpc/ch3-08-grpcurl-tool.md)
   * [3.9 Lời nói thêm](ch3-rpc/ch3-09-ext.md)
 * [Chương 4: Go và Web](ch4-web/README.md)
+  * [4.1: Go và Web](ch4-web/ch4-01-web-intro.md)
 * [Chương 5: Hệ thống phân tán](ch5-distributed-system/README.md)
   * [5.1 Distributed id generator](ch5-distributed-system/ch5-01-dist-id.md)
   * [5.2 Distributed lock](ch5-distributed-system/ch5-02-lock.md)

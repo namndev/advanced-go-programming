@@ -17,4 +17,4 @@ Chương này sẽ giải thích vị trí hiện tại của Go trong lĩnh v�
 
 Đồng thời, chúng tôi sẽ giới thiệu một số vấn đề gặp phải của các doanh nghiệp hiện đại phải đối mặt và cách giải quyết chúng bằng ngôn ngữ Go.
 
-(Chúng tôi đang update chapter này, sẽ sớm có bản cập cho các bạn)
+[Tiếp theo](ch4-01-web-intro.md)
